@@ -1,20 +1,69 @@
-.app-container {
-  max-width: 1280px;
-  margin: 20px auto;  
-  padding: 30px;
+body {
+  font-family: 'Aleo', serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.hero {
+  background-color: white; 
+  color: black;
+  padding: 60px 20px;
   text-align: center;
+  border-radius: 10px;
+  margin: 40px auto;
+  box-shadow: 0 2px 6px #1c3039;
+  max-width: 1100px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Aleo', serif;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color:black;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .app-title {
   font-size: 32px; 
   font-weight: 700; 
   margin-bottom: 24px; 
+  display: flex;
+  justify-content: center;
+  font-family: 'Aleo', serif;
 }
 
-.cards-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 20px;
-  justify-content: center;
+.resume-container{
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
 }
+
+.download-link{
+    text-decoration: none;
+    padding: 8px 20px;
+    color: #58E0C0;  
+    border: 2px solid transparent;  
+    font-size: 18px;
+    display: inline-block;
+    transition: color 0.3s ease; 
+}
+
+.download-link:hover{
+    color: #1c3039 !important; 
+}
+

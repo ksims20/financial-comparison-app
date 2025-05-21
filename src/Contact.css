@@ -1,0 +1,111 @@
+/**
+ * Contact.css
+ *
+ * Styles the Contact page layout:
+ */
+
+body {
+  font-family: 'Aleo', serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Helvetica', sans-serif;
+}
+
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 32px;
+  flex-wrap: wrap; /* Makes it mobile responsive */
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+  min-width: 300px;
+  font-size: 18px;
+}
+
+.about-left {
+  padding-right: 32px;
+}
+
+.about-right {
+    display: flex;
+  flex-direction: column; /* Stack image and icons vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 4px #b22a2e;
+  margin-bottom: 12px;
+}
+
+.Text {
+  color: black;
+  margin-bottom: 16px;
+}
+
+.tealText{
+    color:#b22a2e;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.download-link {
+  color: #1c3039;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.download-link:hover {
+  color: #1c3039;
+}
+
+
+.contact-icons .logo {
+  font-size: 48px; 
+  color: #b22a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-icons .logo:hover {
+  transform: scale(1.1);
+  color: #1c3039;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.contact-icons .logo {
+  font-size: 48px;
+  color: #b22a2e;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-icons .logo:hover {
+  transform: scale(1.1);
+  color: #1c3039;
+}
+

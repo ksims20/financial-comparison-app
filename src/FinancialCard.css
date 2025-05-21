@@ -1,27 +1,46 @@
+/**
+ * FinancialCard.css
+ *
+ * Styles for the reusable financial product card used on Home.
+ */
+
+body {
+  font-family: 'Aleo', serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Helvetica', sans-serif;
+}
+
 .card {
-    border: 1px solid black;
-    border-radius: 8px; 
-    padding: 16px; 
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease transform 0.3s ease;
-    cursor: pointer;
-    background-color: beige;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  border: 1px solid black; 
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px #b22a2e;
+  background-color: #1c3039; 
+  color: white;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
   .card:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transform: scale(1.03);
   }
   
   .card-title {
-    font-size: 20px; 
-    font-weight: 600; 
-    margin-bottom: 8px; 
+   font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Aleo', serif;
   }
   
   .card-description {
-    color: black; 
+    color: white; 
     margin-bottom: 16px; 
   }
   
@@ -29,5 +48,26 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px; 
+    gap: 10px;
   }
+
+  .card-badge {
+  display: inline-block;
+  background-color: #b22a2e;
+  color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 auto 16px; 
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
   

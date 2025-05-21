@@ -7,9 +7,10 @@
 
 import '../FinancialCard.css';
 
-export default function FinancialCard({ title, description, rate, fees }) {
+export default function FinancialCard({ type, title, description, rate, fees }) {
   return (
     <div className="card">
+      <span className="card-badge">{type}</span>
       <h3 className="card-title">{title}</h3>
       <p className="card-description">{description}</p>
       <div className="card-footer">

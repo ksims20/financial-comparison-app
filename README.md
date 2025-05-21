@@ -10,6 +10,9 @@ A simple React + Vite demo showing how to compare financial products side-by-sid
 - **Contact section** with headshot and social/email icons  
 
 ---
+PROJECT LINK:
+https://ksimsredventureproject.netlify.app/
+---
 
 ## 📦 Tech Stack
 

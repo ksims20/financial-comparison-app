@@ -10,7 +10,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import FinancialCard from './components/FinancialCard.Jsx';
+import FinancialCard from './components/FinancialCard.jsx';
 import Header from './components/Header';
 import Products from './pages/Products';
 import Contact from './pages/Contact';

@@ -23,8 +23,8 @@ h1, h2, h3, h4 {
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 2px 6px #b22a2e;
-  background-color: #1c3039; 
-  color: white;
+  background-color: #f0f0f0; 
+  color: black;
   text-align: center;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
@@ -37,12 +37,12 @@ h1, h2, h3, h4 {
   .card-title {
    font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: black;
   font-family: 'Aleo', serif;
   }
   
   .card-description {
-    color: white; 
+    color: black; 
     margin-bottom: 16px; 
   }
   
@@ -73,3 +73,15 @@ h1, h2, h3, h4 {
   padding: 0 20px;
 }
   
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

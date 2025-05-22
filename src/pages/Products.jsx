@@ -49,9 +49,12 @@ const productData = [
 const Products = () => {
   return (
     <div className="products-page">
+
+      <section className="highlight-hero">
       <section className="hero">
         <h1>Explore Top Financial Tools</h1>
         <p>We’ve hand-picked financial products to help you grow, save, or borrow smarter.</p>
+      </section>
       </section>
 
       <div className="products-list">
@@ -65,7 +68,7 @@ const Products = () => {
               fees={item.fees}
             />
             <div className="product-description">
-              <p>{item.longDescription}</p>
+              <p className="product-text">{item.longDescription}</p>
             </div>
           </div>
         ))}

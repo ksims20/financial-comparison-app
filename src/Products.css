@@ -33,11 +33,13 @@
   flex-wrap: wrap;
   border-radius: 12px;
   box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
+   
 }
 
 .product-row .card {
   flex: 1 1 300px;
   max-width: 400px;
+  background-color: #f0f0f0;
 }
 
 .product-description {
@@ -47,4 +49,28 @@
   color: black;
   padding-top: 10px;
   line-height: 1.6;
+}
+
+.product-text{
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .product-row .card,
+  .product-description {
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .product-description {
+    font-size: 16px;
+  }
 }

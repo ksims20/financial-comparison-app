@@ -25,7 +25,9 @@ function Home() {
     <p>Quickly compare leading credit cards, savings accounts, and personal loans, all in one place.</p>
     </section>
 
+      
       <h1 className="app-title">Compare and Choose</h1>
+       <section className="highlight-section">
       <div className="cards-grid">
         <FinancialCard 
           type="Credit Card"
@@ -57,6 +59,7 @@ function Home() {
         />
        
       </div>
+      </section>
     </div>
   );
 }
